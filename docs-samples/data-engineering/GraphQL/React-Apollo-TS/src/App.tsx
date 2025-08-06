@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery, gql, ApolloClient, ApolloProvider } from '@apollo/client';
 import './App.css';
+import './index.css';
 import { DEFAULT_SCOPE, getCredential, getToken, GRAPHQL_ENDPOINT } from './authConfig';
 import { getApolloClient } from './Client';
 

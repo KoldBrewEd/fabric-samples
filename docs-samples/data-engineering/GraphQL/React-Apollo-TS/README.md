@@ -1,13 +1,15 @@
 # React Apollo TypeScript App
 
-A minimal React TypeScript application with Apollo GraphQL Client.
+A minimal React TypeScript application with Apollo GraphQL Client, powered by Vite for fast development and optimized builds.
 
 ## Features
 
 - ⚛️ **React 18** with TypeScript
+- ⚡ **Vite** for blazing fast development and build times
 - 🚀 **Apollo Client** for GraphQL operations
 - 🎨 **CSS** styling with modular approach
 - 🔧 **TypeScript** for type safety
+- 📦 **ESM** support for modern JavaScript modules
 
 ## Quick Start
 
@@ -45,22 +47,43 @@ npm install
 
 ### Development
 
-### Build
-
-```bash
-npm run build
-```
-
-### Start the development server:
+Start the development server:
 ```bash
 npm run dev
 ```
 
 The app will open at [http://localhost:3000](http://localhost:3000)
 
+### Build
 
+Build for production:
+```bash
+npm run build
+```
 
-The build artifacts will be stored in the `dist/` directory.
+The build artifacts will be stored in the `build/` directory.
+
+### Preview
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+## Migration from Create React App
+
+This project has been migrated from Create React App to Vite for better performance and modern tooling:
+
+### Key Changes:
+- **Faster Development**: Vite provides instant server start and lightning-fast HMR
+- **Optimized Builds**: Better tree-shaking and smaller bundle sizes
+- **Modern Tooling**: Native ESM support and improved TypeScript experience
+- **Environment Variables**: Use `VITE_` prefix instead of `REACT_APP_` for environment variables
+
+### Scripts Changes:
+- `npm start` → `npm run dev`
+- Build command remains the same: `npm run build`
+- New `npm run preview` to preview production builds
 
 ## Project Structure
 
@@ -89,6 +112,7 @@ The Apollo Client is configured in `src/Client.ts` with:
 
 - [React](https://reactjs.org/) - UI library
 - [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Vite](https://vitejs.dev/) - Build tool and development server
 - [Apollo Client](https://www.apollographql.com/docs/react/) - GraphQL client
 - [GraphQL](https://graphql.org/) - Query language for APIs
 
