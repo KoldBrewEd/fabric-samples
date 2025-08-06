@@ -14,7 +14,7 @@ export const AUTH_CONFIG = {
     clientSecret: "<Enter_the_Client_Secret_Here>",
 }
 
-export const GRAPHQL_ENDPOINT = '<Enter_the_GraphQL_Endpoint_Here>';
+export const GRAPHQL_ENDPOINT = 'https://7f8c98f205134c0ba7fa35ffcea479d1.z7f.dailygraphql.fabric.microsoft.com/v1/workspaces/7f8c98f2-0513-4c0b-a7fa-35ffcea479d1/graphqlapis/a703d700-18c6-4b50-84ba-a20f1ab1b179/graphql';
 
 /**
  * Scopes you add here will be prompted for user consent during sign-in.

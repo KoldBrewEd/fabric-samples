@@ -20,7 +20,7 @@ A minimal React TypeScript application with Apollo GraphQL Client.
 
 1. Install dependencies:
 ```bash
-npm run restore
+npm install
 ```
 
 2. Create Fabric GraphQL Endpoint:
@@ -31,12 +31,12 @@ npm run restore
    - Step 2:
       - Create a GraphQL API:
          - Creating an API from your SQL table is fast, easy, and straightforward. You just need to click the New API for GraphQL button in the ribbon and give your API a name.
-         - Next select tables in your database, then click Load
+         - Next select all tables in your database, then click Load
 
 3. Configure your GraphQL API:
    - Open `src/authConfig.ts`
    - Replace `'https://your-graphql-endpoint.com/graphql'` with your actual GraphQL endpoint
-   - Add authentication related config 
+   - Follow the steps from the "Create a Microsoft Entra app" section in the [documentation](https://learn.microsoft.com/en-us/fabric/data-engineering/connect-apps-api-graphql#create-a-microsoft-entra-app) to use in the `AUTH_CONFIG` details.
 
 4. Update the GraphQL schema:
    - Replace `schema.graphql` with your actual GraphQL schema
@@ -53,7 +53,7 @@ npm run build
 
 ### Start the development server:
 ```bash
-npm start
+npm run dev
 ```
 
 The app will open at [http://localhost:3000](http://localhost:3000)
